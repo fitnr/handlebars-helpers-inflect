@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "Handlebars helpers for inflecting text",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com/fitnr/handlebars-helpers-inflect/"
+  },
   "scripts": {
     "test": "mocha test/*.js"
   },
   "keywords": [
     "handlebars",
     "helpers",
-    "inflection"
+    "inflection",
+    "string formatting",
+    "ordinal"
   ],
   "author": "Neil Freeman",
   "license": "MIT",

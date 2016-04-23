@@ -50,10 +50,10 @@ describe('capitalizeFirst', function() {
     });
 });
 
-describe('title', function() {
-    describe('{{title string}}', function() {
+describe('capitalizeEach', function() {
+    describe('{{capitalizeEach string}}', function() {
         it('should return the string with the every word capitalized.', function() {
-            source = '{{title "bender should not bE allowed on tV"}}';
+            source = '{{capitalizeEach "bender should not bE allowed on tV"}}';
             template = Handlebars.compile(source);
             template().should.equal('Bender Should Not BE Allowed On TV');
         });

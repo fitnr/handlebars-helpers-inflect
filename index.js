@@ -146,12 +146,12 @@ var helpers = {
     },
 
     /**
-     * {{title}}
+     * {{capitalizeEach}}
      * Capitalize each word in a sentence
      * @param  {String} str [description]
      * @return {String}     [description]
      */
-    title: function(str) {
+    capitalizeEach: function(str) {
         if (str && typeof str === "string") {
             return str.replace(/\w\S*/g, function(word) {
                 return word.charAt(0).toUpperCase() + word.substr(1);
@@ -282,7 +282,7 @@ var helpers = {
 
     /**
      * {{count}}
-     * Return the number of occurrances of a string, within a string
+     * Return the number of occurrences of a string, within a string
      * @author: Jon Schlinkert <http://github.com/jonschlinkert>
      * @param  {String} str       The haystack
      * @param  {String} substring The needle
