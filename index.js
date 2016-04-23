@@ -363,7 +363,7 @@ var helpers = {
      *   {{/startsWith}}
      */
     startsWith: function(prefix, str, options) {
-        if ((str !== null ? str.indexOf(prefix) : void 0) === 0) {
+        if (typeof str !== 'undefined' && str.indexOf(prefix) === 0) {
             return options.fn(this);
         } else {
             return options.inverse(this);
